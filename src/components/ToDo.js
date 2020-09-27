@@ -1,9 +1,15 @@
 import React from 'react'
 
 const ToDo = ({ id, todo}) => {
+
+  const updateStatus = (e) => {
+    e.preventDefault()
+    
+  }
+
   return (
     <section className='ToDo' id={id}>
-      <li>{todo}</li>
+      <li onclick={updateStatus}>{todo}</li>
     </section>
   )
 }
